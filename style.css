@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+:root{
+    --color-primary:#006241;
+    --color-secondary: #d50032;
+    --color-extra: #d4e9e2;
+}
+*{
+    box-sizing: border-box;
+    
+}
+html body{
+    font-family: 'open sans',sans-serif;
+    line-height: 1.4;
+    color: black;
+}
+a{
+    color: black;
+}
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+
+}
+.navbar{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
+    0 0 2px rgb(0 0 0 / 7%);
+    margin-bottom: 5vh;
+    
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+.navbar li{
+    margin:0 15px;
+    font-weight: bold;
+}
+.navbar a{
+    color: black;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color: var(--color-primary);
+}
+.navbar-brand svg{
+    width: 50px;
+    height: 50px;
+    
+}
+.navbar-nav-left{
+    text-transform: uppercase;
+    flex:1;
+    margin-left: 20px;
+}
+.navbar-nav-right>li>a{
+    display: flex;
+    
+    align-items: center;
+}
+.navbar-nav-right>li>svg{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    
+}
+.navbar-nav-right li:nth-child(2){
+    margin: 0px 5px;
+}
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    background: none;
+    border: 1px black soild;
+    border-radius: 50px;
+    padding: 7px 16px;
+    line-height:1.2;
+    text-align: center;
+    text-decoration: none;
+    
+}
+.btn-dark-outline{
+    border-color: black;
+    color: black;
+}
+.btn-dark-outline:hover,
+.btn-light-outline:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.btn-light-outline{
+    border-color:black;
+    color: rgb(22, 42, 22);
+    font-weight: bold;
+    border: 1px solid black;
+   
+    
+    
+}
+.btn-dark{
+    background-color: black;
+    color: white;
+}
+ul>li>button{
+    font-weight: bold;
+}
+.box {
+    margin-bottom: 30px;
+}
+
+.text-xl {
+    font-size: 50px;
+    
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .text-md {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+ 
+  .bg-secondary {
+    background-color: #eb81a5;
+    color: rgb(13, 50, 13)
+  }
+  .bg-third {
+    background-color:#8f8bf4;
+    color: rgb(10, 46, 10)
+
+  }
+  .bg-forth{
+    background-color: #cbe678;
+    color:rgb(10, 46, 10) ;
+  }
+
+  .grid-col-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    align-items: center;
+    justify-items: center;
+    
+    
+    
+    
+    
+  }
+  
+  
+  .box-text{
+    max-width: 500px;
+   
+    text-align: center; 
+    justify-self: center;
+   
+    
+    
+    
+    padding: 20px 0px;
+  }
+  
+  @media (min-width: 1440px) {
+    .box{
+      max-width: 1440px;
+      
+      margin-right: auto;
+      margin-left: auto;
+    
+    }
+    footer{
+        max-width: 1440px;
+      margin-right: auto;
+      margin-left: auto;
+
+    }
+    /*edit item*/
+    .bg-editboxa{
+        background-color: #d4e9e2;
+    }
+    .bg-editboxb{
+        background-color: #cbe678;
+    }
+    .text-md-editbox{
+        font-size:17px ;
+        letter-spacing:1px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        
+    }
+    .editsection{
+        text-align: center;
+        padding: 20px 0px;
+        font-size: 14px;
+        
+        
+    }
+    
+    
+
+   
+}
+.aboutbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 1150px;
+
+    margin-left: 50px;
+    margin-top: 30px;
+    
+    
+    
+}
+.flexbox{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 200px;
+
+}
+.flexbox a{
+    text-decoration:none;
+    color: rgb(72, 70, 70);
+}
+.about{
+    border: 10px solid rgb(196, 184, 184);
+    border-width: 2px 0px 0px 0px;
+}
+.flexbox h4{
+    font-size: 18px;
+    font-weight:12;
+    color: black;
+}
+.footerlogo{
+    display: flex;
+    gap: 15px;
+    margin-top: 40px
+}
+.footermenu{
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+    
+    
+}
+footer{
+    border: 10px solid rgb(230, 224, 224);
+    border-width: 2px 0px 0px 0px;
+    margin-top: 45px;
+    
+}
+.footerend{
+    margin-top: 30px;
+    font-size: 13px;
+    margin: 0;
+    color: rgb(122, 112, 112);
+    margin-bottom: 40px;
+   
+}
